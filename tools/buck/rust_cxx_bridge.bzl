@@ -28,7 +28,7 @@ def rust_cxx_bridge(
     native.cxx_library(
         name = name,
         srcs = [":%s/source" % name],
-        preferred_linkage = "static",
+        preferred_linkage = "shared",
         exported_deps = deps + [":%s/include" % name],
     )
 

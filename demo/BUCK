@@ -20,7 +20,7 @@ rust_cxx_bridge(
 cxx_library(
     name = "blobstore-sys",
     srcs = ["src/blobstore.cc"],
-    preferred_linkage = "static",
+    preferred_linkage = "shared",
     deps = [
         ":blobstore-include",
         ":bridge/include",

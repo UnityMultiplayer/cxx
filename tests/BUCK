@@ -38,7 +38,7 @@ cxx_library(
         ":module/header",
         "ffi/tests.h",
     ],
-    preferred_linkage = "static",
+    preferred_linkage = "shared",
 )
 
 rust_cxx_bridge(

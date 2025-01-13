@@ -46,7 +46,7 @@ cxx_library(
         "cxx.h": "include/cxx.h",
     },
     header_namespace = "rust",
-    preferred_linkage = "static",
+    preferred_linkage = "shared",
     visibility = ["PUBLIC"],
 )
 
